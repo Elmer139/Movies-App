@@ -1,0 +1,47 @@
+html {
+  background-color: rgb(243, 243, 243);
+}
+
+.movie-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 24px;
+  padding: 0;
+}
+
+li {
+  text-align: left;
+  background-color: white;
+  flex: 1 1 auto; /* Grow and shrink, auto width */
+  max-width: 375px;
+  list-style-type: none;
+  line-height: 1.5rem;
+  margin: 20px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
+  align-items: stretch; /* Ensure consistent vertical alignment */
+  display: flex; /* Added for Flexbox layout */
+  flex-direction: column; /* Added for Flexbox layout */
+}
+
+li > p {
+  max-width: 480px;
+  margin-top: auto; /* Pushes the body copy to the top */
+}
+
+img {
+  width: auto; /* Maintain aspect ratio */
+  max-width: 100%; /* Ensure image doesn't exceed container width */
+  max-height: 100%; /* Ensure image doesn't exceed container height */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensures proper vertical alignment */
+  margin: 0 auto; /* Center the image horizontally */
+}
